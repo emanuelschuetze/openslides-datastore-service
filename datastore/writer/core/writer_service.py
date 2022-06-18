@@ -90,7 +90,7 @@ class WriterService:
                 migration_index = write_request.migration_index
 
             # Check locked_fields -> Possible LockedError
-            self.occ_locker.assert_locked_fields(write_request)
+            # self.occ_locker.assert_locked_fields(write_request)
 
             # Insert db events with position data
             information = (
